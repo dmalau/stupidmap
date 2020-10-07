@@ -1,0 +1,7 @@
+<% divided_posts.forEach(function(chunked_posts, i){ chunked_posts.forEach(function(post){ %>
+	<url>
+		<loc>https://<%= thedomain %>/<%= post.slug %>.html</loc>
+		<lastmod><%= hariini %></lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url><% }); }) %>
