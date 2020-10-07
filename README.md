@@ -1,4 +1,4 @@
-# Auto SiteMap Mod for StupidBot.dojo.cc
+# auto-sitemap-mod for stupidbot.dojo.cc
 
 All files modified are in it's respective folder.
 
