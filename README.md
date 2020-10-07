@@ -2,4 +2,4 @@
 
 All files modified are in it's respective folder. You can replace your original files with this mod so you can generate sitemap.xml while publishing HTML files.
 
-Thank you and enjoy.. :P
+Thank you, keep building and enjoy.. 💪😃
