@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-yrfSO0DBjS56u5M+SjWTyAHujrkiYVtRYh2dtB3yLQtUz3bodOeialO59u5lUCFF" crossorigin="anonymous">
+</head>
+<body>
+	<section id="header"></section>
+	<section id="nav"></section>
+
+	<section id="content">
+		<div class="container">
+		
+			<div class="row mt-2">
+				<div class="col-md-12 text-center" style="min-width: 450px; min-height: 300px;">
+					
+					<h4 class="m-2 mb-3"><strong id="title" class="text-primary">Publish <span id="post_count"></span> Posts to Static HTML</strong></h4>
+
+					<div class="mx-2" id="main">
+						<div id="form">
+							<div class="form-group text-left">
+								<label for="name">Site Name</i></label>
+								<input type="text" class="form-control" name="name" id="name" value="Delicious Recipes">
+							</div>
+
+							<div class="form-group text-left">
+								<label for="name">Site Description (HTML)</i></label>
+								<input type="text" class="form-control" name="description" id="description" value="<b>Delicious, fresh</b> and <mark>tasty</mark>.">
+							</div>
+							
+							<div class="form-group text-left">
+								<label for="name">Tanggal hari ini</i></label>
+								<input type="text" class="form-control" name="hariini" id="hariini">
+							</div>
+
+							<div class="form-group text-left">
+								<label for="name">Domain (tanpa awalan http:// dan akhiran /)</i></label>
+								<input type="text" class="form-control" name="thedomain" id="thedomain" value="thedomain.netlify.app">
+							</div>
+						</div>
+						
+						<div id="loading" class="d-none">
+							<div class="spinner-border m-4" role="status" id="spinner">
+								<span class="sr-only">Loading...</span>
+							</div>
+						</div>
+						
+						<button id="publish" class="btn btn-primary px-5 my-2">&rarr; Create Static Site</button>
+
+						<br>
+						<button class="btn-back btn btn-outline-secondary m-2 btn-sm px-3">Back</button>
+						<p id="status" class="mt-2 d-none"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="support"></section>
+
+	<script src="libs/jquery.min.js"></script>
+	<script src="libs/bootstrap.min.js"></script>
+	<script src="libs/lodash.min.js"></script>
+	<script src="libs/ejs.min.js"></script>
+	<script src="libs/jszip.min.js"></script>
+	<script src="libs/FileSaver.min.js"></script>
+	<script src="libs/chance.min.js"></script>
+
+	<script src="js/script.js"></script>
+	<script src="js/publish-html.js"></script>
+</body>
+</html>
