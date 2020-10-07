@@ -91,7 +91,7 @@ function generatePosts(layout, data){
 	var output = ejs.render(layout, data);
 	zip.file(post.slug + '.html', output);
 	if(data.posts.length == 0){
-		zip.file('googlec972a0074fd7c36a.html','google-site-verification: googlec972a0074fd7c36a.html');
+		//zip.file('googlec972a0074fd7c36a.html','google-site-verification: googlec972a0074fd7c36a.html');
 		setHeading('Your download will begin...');
 		downloadZip();
 	}
